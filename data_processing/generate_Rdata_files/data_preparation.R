@@ -4,7 +4,7 @@
 rm(list=ls())
 
 ## load data
-data_dir <- "/media/sebastian/Elements/Postproc_NN/data/"
+data_dir <- "E:/RadarData/2018/01/"
 library(ncdf4)
 nc <- nc_open(paste0(data_dir, "data_interpolated_00UTC.nc"))
 fcdata <- ncvar_get(nc, "t2m_fc") 
